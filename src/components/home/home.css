@@ -1,0 +1,100 @@
+.header-div{
+    height: 40rem;
+    background: url("https://bibliotekasabac.org.rs/wp-content/uploads/2019/11/IMG_3253-1024x683.jpg");
+    background: url("https://miro.medium.com/max/1400/0*YYkZ0h00fY_tzLBF");
+     background-repeat: no-repeat;
+     background-size:cover;
+
+}
+.header-text{
+
+    padding-top:10%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+
+
+}
+.text{
+    background-color:black;
+    opacity: 80%;
+    height: 17rem;
+    width: 70%;
+    margin-left: 3rem;
+    margin-bottom:1rem;
+    border-radius: 3rem;
+    padding: 2rem;
+    color: white;
+    margin-top:3rem
+}
+.form-right{
+    background-color:black;
+    opacity: 80%;
+    height: 23rem;
+    width: 70%;
+    margin-right: 3rem;
+    margin-bottom:1rem;
+    border-radius: 3rem;
+    padding: 2rem;
+    color: white;
+
+}
+.heading-text{
+    float:left;
+    opacity: 100% !important;
+    margin-left: 2rem;
+
+}
+.normal-text{
+    float:left;
+}
+form p{
+    float: left;
+    margin-left: 20%;
+    display: block;
+}
+label{
+    margin-top: 1.5rem;
+    display: block;
+}
+.btn-login{
+    width: 80%;
+    height: 2rem;
+    margin-top:4rem;
+    border-radius:5px;
+    background-color: black;
+    border: 1px solid white;
+    color:white;
+    opacity: 100% !important;
+    font-weight: 20px;
+    font-size: 15px;
+
+}
+.error-msg-login{
+
+    margin-right: 4rem;
+    float: left;
+    border-radius: 5px;
+    margin-top:1rem;
+    color:red;
+    text-align: center;
+    padding-top:5px;
+    font-size: 15px;
+    width: 80%;
+    float: right;
+   
+}
+@media screen and (max-width: 500px){
+
+        .text{
+            height: 25rem;
+            display: none;
+        }      
+        .form-right{
+            margin-left: 3.5rem;
+            width: 100%;
+            margin-top:2rem;
+        }
+        
+
+
+    }

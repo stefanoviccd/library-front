@@ -1,0 +1,33 @@
+.notFoundPageMessage{
+    position: absolute;
+    top:5rem;
+    left: 15%;
+    height: 20rem;
+    width: 70%;
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    font-size:40px;
+    padding: 1rem;
+    border-radius: 5px;
+    color: red;
+
+}
+.notfound{
+    font-size: 15px !important;
+}
+.notFoundPageMessage img{height: 10rem;
+width: 15rem;
+background: transparent;}
+.notFoundPageMessage p{
+    margin-bottom: 1rem;
+}
+.btn-error{
+    background-color: red;
+    color: white;
+    opacity: 80%;
+    margin: 3rem !important;
+    padding: 0.5rem;
+    border-radius: 5px;
+
+}

@@ -1,0 +1,147 @@
+.rent-form form{
+    background-color:black;
+    display: block;
+    opacity: 80%;
+    height: 17rem;
+    width: 50%;
+    border-radius: 1rem;
+    color: white;
+    text-align: center;
+    margin-top: 5rem;
+    text-align: left;
+    padding-left: 2rem;
+
+}
+.check-button{
+    margin-left: 1rem;
+    padding-top: 4px !important;
+    border-radius: 5px;
+    
+}
+.success{
+background-color: green;
+color: black;
+}
+.unsuccess{
+    background-color: red;
+    color:black
+}
+.input{
+    width: 50%;
+}
+.btn-generate-card-number{
+    margin-top:2rem;
+    width: 12rem;
+    height: 2rem;
+    float: left;
+    margin-left: 3.7rem;
+    margin-bottom: 0.5rem;
+}
+.btn-save{
+    width: 50%;
+    height: 2rem;
+    margin-top:1rem;
+    margin-left: 2rem;
+    border-radius:5px;
+    background-color: black;
+    border: 1px solid white;
+    color:white;
+    opacity: 100% !important;
+    font-weight: 20px;
+    font-size: 15px;
+
+}
+.btn-return{
+    background-color: black;
+    width: 4rem;
+    color: white
+}
+.btn-return:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+.btn-change:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+.btn-save:hover{
+background-color: white;
+color: black;
+opacity: 100%;
+
+}
+.btn-check{
+    width: 12rem;
+    background-color: white;
+    color: black;
+    margin-top:1rem
+}
+.centered-content{
+    position: absolute;
+    left: 45%;
+    top:20rem;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    height: 30rem;
+    width: 70%;
+
+
+
+}
+
+.btn-change{
+    background-color: black;
+    color: white;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 0.7rem;
+    opacity: 70%;
+}
+.div-books{
+    width: 90%;
+    position: absolute;
+    top:28rem;
+    left: 3rem;
+    right: 3rem;
+    margin-bottom: 2rem;
+}
+@media screen and (max-width: 500px){
+    .btn-generate-card-number{
+        margin-left: 3.5rem;
+        width: 8rem;
+
+    }
+    .div-books{
+
+        margin-top: 2rem;
+        left: 0 !important;
+        right:0 !important;
+
+
+    }
+    .btn-check{
+        width: 60%;
+        height: 2rem;
+        margin-top:1rem;
+    }
+    .rent-form form{
+        height: 18rem;
+        width: 60%;
+        margin-bottom: 0rem;
+        padding-bottom: 0 !important;
+    }
+  
+                
+    }
+    .error-msg-div{
+        color: red;
+        float: left;
+    }
+  
+    .btn-disabled{
+        background-color: black;
+        width: 4rem;
+        color: white
+    }

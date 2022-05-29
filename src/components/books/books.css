@@ -1,0 +1,108 @@
+.table-of-books{
+    padding-top:6rem;
+    padding-right: 3rem;
+
+}
+table{
+    width: 100%;
+    margin-right:2rem !important;
+    margin-left: 2rem;
+    text-align: center;
+}
+tbody{
+    margin:20px
+}
+thead{
+    background-color: black;
+    opacity: 70%;
+    color: white;
+    height: 2rem;
+}
+tbody tr{
+    background-color: white;
+    opacity: 70%;
+    color: black;
+}
+tbody tr:hover{
+    opacity: 100%;
+}
+.operations{
+    width: 8rem;
+}
+button{
+    margin-right: 1rem;
+    border-radius: 2px;
+    border: none;
+    height: 1.5rem;
+    width:  2rem;
+}
+.button-delete{
+    background-color: crimson;
+    margin-left: 0.5rem;
+}
+.button-details{
+    background-color: rgb(75, 153, 75);
+    margin-left: 1rem;
+
+}
+.button-reset{
+    float: right;
+    margin-left: 1rem;
+}
+.button-add-book{
+    float: left;
+    margin-left: 2rem;
+    background-color: white !important;
+    width: 7rem;
+    height: 1.5rem;
+    opacity: 70%;
+}
+.button-add-book:hover{
+
+    opacity: 100%;
+}
+.error-msg-books{
+    background-color: transparent;
+        margin-left:25%;
+        opacity: 80%;
+        border-radius: 5px;
+        margin-top:1rem;
+        color:red;
+        text-align: center;
+        position: absolute;
+        top:5rem;
+        font-size: 15px;
+        width: 100%;
+        float: left;
+        background-color: white;
+        width: 50%;
+}
+.search{
+    float: right;
+    padding-top: 6rem;
+    padding-right:0.5rem
+
+ 
+}
+
+@media screen and (max-width: 500px){
+ .input-search{
+     width: 3rem !important;
+ }
+
+    }
+
+.pgn-div
+{
+    position: absolute;
+    top:6rem;
+    left:11rem
+}
+.pgn-div button{
+    margin-left: 1px;
+    margin-right: 0;
+    margin-bottom:2px;
+    padding: 0;
+    width: 30px;
+    opacity: 80%;
+}

@@ -1,0 +1,63 @@
+.table-of-users{
+    padding-top:6rem;
+    padding-right: 3rem;
+
+}
+table{
+    width: 100%;
+    margin-right:2rem !important;
+    margin-left: 2rem;
+    text-align: center;
+}
+tbody{
+    margin:20px
+}
+thead{
+    background-color: black;
+    opacity: 70%;
+    color: white;
+    height: 2rem;
+}
+tbody tr{
+    background-color: white;
+    opacity: 70%;
+    color: black;
+}
+tbody tr:hover{
+    opacity: 100%;
+}
+.operations{
+    width: 8rem;
+}
+button{
+    margin-right: 1rem;
+    border-radius: 2px;
+    border: none;
+    height: 1.5rem;
+    width:  2rem;
+}
+.button-delete{
+    background-color: crimson;
+    margin-left: 0.5rem;
+}
+.button-details{
+    background-color: rgb(75, 153, 75);
+    margin-left: 1rem;
+
+}
+.button-reset{
+    float: right;
+    margin-left: 1rem;
+}
+.button-add-user{
+    float: left;
+    margin-left: 2rem;
+    background-color: white !important;
+    width: 7rem;
+    height: 1.5rem;
+    opacity: 70%;
+}
+.button-add-user:hover{
+
+    opacity: 100%;
+}

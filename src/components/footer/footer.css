@@ -1,0 +1,8 @@
+div{
+    height: 2rem;
+    text-align: right;
+}
+div p{
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}

@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
-}
+.header-div{
+  height: 52rem !important;
+  background: url("https://miro.medium.com/max/1400/0*YYkZ0h00fY_tzLBF");
+   background-repeat: no-repeat;
+   background-size:cover;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
+.sessionExpiredDiv{
+position: absolute;
+left:40%;
+top: 30%;
+background-color: white;
+height: 8rem;
+width: 15rem;
+text-align: center;
+padding-top:1rem;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.session-buttons{
+margin-top:2rem;
+padding-left: 1rem;
+}
+.session-btn{
+  width: 60px;
+  height: 40px;
+  background-color: black;
   color: white;
 }
+.whole-page-layer{
+  position: absolute;
+  left:0;
+  top:0;
+  height: 100%;
+  width: 100%;
 
-.App-link {
-  color: #61dafb;
 }
+@media screen and (max-width: 500px){
+  .sessionExpiredDiv{
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    width: 94%;
+    left:3%;
+    right:3%
   }
-  to {
-    transform: rotate(360deg);
+
   }
-}

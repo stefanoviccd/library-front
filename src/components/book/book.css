@@ -1,0 +1,97 @@
+.book-form form{
+    background-color:black;
+    display: block !important;
+    opacity: 80%;
+    height: 35rem;
+    width: 70%;
+    border-radius: 3rem;
+    color: white;
+    text-align: center;
+
+}
+.btn-change-book{
+    background-color: black;
+    color: white;
+    width: 8rem !important;
+    height: 2rem;
+    border-radius: 0.7rem;
+    opacity: 80%;
+    float: right;
+    margin-right: 3rem !important;
+}
+.input, select{
+    width: 80% !important;
+}
+#a-name, #a-lastName{
+    width: 38% !important;
+    display: inline;
+   
+
+
+}
+.error-msg{
+    background-color: transparent;
+    margin-left: 6rem;
+    border-radius: 5px;
+    margin-top:1rem;
+    color:red;
+    text-align: center;
+    padding-top:5px;
+    font-size: 15px;
+    width: 70%;
+    float: left;
+}
+#a-name{
+    margin-right: 1rem;
+}
+
+.btn-save{
+    width: 50%;
+    height: 2rem;
+    margin-top:1rem;
+    margin-left: 2rem;
+    border-radius:5px;
+    background-color: black;
+    border: 1px solid white;
+    color:white;
+    opacity: 100% !important;
+    font-weight: 20px;
+    font-size: 15px;
+
+}
+.btn-save:hover{
+background-color: white;
+color: black;
+opacity: 100%;
+
+}
+.centered-content-book{
+    position: absolute;
+    left: 60%;
+    top: 20rem;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    height: 25rem;
+    width: 70%;
+}
+
+@media screen and (max-width: 500px){
+    .centered-content-book{
+        width: 90%;
+    }
+    .error-msg{
+        background-color: transparent;
+        margin-left:0.5rem;
+        border-radius: 5px;
+        margin-top:1rem;
+        color:red;
+        text-align: center;
+        padding-top:5px;
+        font-size: 15px;
+        width: 100%;
+        float: left;
+   
+    }
+                
+    }
+   
