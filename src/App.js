@@ -17,6 +17,7 @@ import Error from "./components/error/Error";
 import NotFound from "./components/notFound/NotFound";
 import { useNavigate } from "react-router-dom";
 import UserService from "./services/UserService";
+import { createBrowserHistory } from "history";
 
 
 
@@ -28,8 +29,8 @@ function App() {
   const [openModal, setOpenModal]=useState(false);
   const[genres, setGenres]=useState([])
   const [isLoggedIn, setIsLoggedIn] = useState(JSON.parse(window.localStorage.getItem('isLoggedIn')));
-  const [sessionExpired, setSessionExpired] = useState(false);
-
+  const[sessionExpire, setSessionExpired]=useState(false);
+  const [loop, setLoop]=useState(1);
 
 
 
@@ -154,6 +155,7 @@ const logoutAndRedirectToHome=function(e){
   logout();
   setOpenModal(false)
 
+
 }
 const reloadSession=function(){
   const username=window.localStorage.getItem("username");
@@ -174,13 +176,15 @@ const reloadSession=function(){
         window.localStorage.setItem("expiration", response.data.responseData[1] )
         window.localStorage.setItem("username", username )
         window.localStorage.setItem("password", password)        
+        setOpenModal(false)
+        window.location.reload()
       
       }
     })
     .catch((error) => {
       console.log(error);
     });
-    setOpenModal(false)
+
   
 }
 

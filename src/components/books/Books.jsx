@@ -34,6 +34,7 @@ const renderErrorMessage = (message) =>
 }, [])
 const resetSearch= (e)=>{
   e.preventDefault();
+  console.log("Refresh search")
   props.getAllBooks();
 
 }
@@ -94,7 +95,7 @@ const currentBooks=props.books.slice(indexOfFirstBook, indexOfLastBook);
 
           <button className="button-reset" onClick={(e)=>resetSearch(e)}>
             <GrPowerReset></GrPowerReset>
-          </button>
+          </button> 
          
         </div>
       <div className="table-of-books">

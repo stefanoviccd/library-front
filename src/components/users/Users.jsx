@@ -32,9 +32,6 @@ const goNext=function(e){
   console.log(currentPage)
   return;
 }
-const indexOfLastBook=usersPerPage*currentPage;
-const indexOfFirstBook= indexOfLastBook-usersPerPage;
-const currentUsers=props.users.slice(indexOfFirstBook, indexOfLastBook);
 
   function showMessage() {
     //  document.getElementById(elementId).style.visibility = "visible";
@@ -51,6 +48,7 @@ const currentUsers=props.users.slice(indexOfFirstBook, indexOfLastBook);
   }, []);
   const resetSearch = (e) => {
     e.preventDefault();
+    console.log("Reset search")
     props.getAllUsers();
   };
   const deleteUser = (id) => {
@@ -70,6 +68,9 @@ const currentUsers=props.users.slice(indexOfFirstBook, indexOfLastBook);
         console.log(error);
       });
   };
+  const indexOfLastUser=usersPerPage*currentPage;
+const indexOfFirstUser= indexOfLastUser-usersPerPage;
+const currentUsers=props.users.slice(indexOfFirstUser, indexOfLastUser);
   return (
     <>
       {errorMessage === true ? renderErrorMessage(<b>{message}</b>) : <></>}
@@ -88,7 +89,7 @@ const currentUsers=props.users.slice(indexOfFirstBook, indexOfLastBook);
           onChange={(e) => props.getUsersByValue(e.target.value)}
         ></input>
 
-        <button className="button-reset">
+        <button className="button-reset" onClick={(e)=>resetSearch(e)}>
           <GrPowerReset></GrPowerReset>
         </button>
       </div>
